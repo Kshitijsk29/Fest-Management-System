@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Event-Management-Application</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+     <welcome-file>index.css</welcome-file>
+      <welcome-file>index.js</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  		<servlet-name>add</servlet-name>
+  		<servlet-class>com.nt.proj.AddEvent</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>add</servlet-name>
+ 		<url-pattern>/AddEvent</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  		<servlet-name>Login</servlet-name>
+  		<servlet-class>com.nt.proj.LoginDao</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>Login</servlet-name>
+ 		<url-pattern>/LoginDao</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  		<servlet-name>reg</servlet-name>
+  		<servlet-class>com.nt.proj.Register</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>reg</servlet-name>
+ 		<url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  		<servlet-name>store</servlet-name>
+  		<servlet-class>com.nt.proj.StoreProcess</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>store</servlet-name>
+ 		<url-pattern>/StoreProcess</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  		<servlet-name>trah</servlet-name>
+  		<servlet-class>com.nt.proj.TraH</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>trah</servlet-name>
+ 		<url-pattern>/TraH</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  		<servlet-name>validate</servlet-name>
+  		<servlet-class>com.nt.proj.ValidateAd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>validate</servlet-name>
+ 		<url-pattern>/ValidateAd</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  		<servlet-name>vapa</servlet-name>
+  		<servlet-class>com.nt.proj.VaPa</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>vapa</servlet-name>
+ 		<url-pattern>/VaPa</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  		<servlet-name>view</servlet-name>
+  		<servlet-class>com.nt.proj.ViewEvent1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>view</servlet-name>
+ 		<url-pattern>/ViewEvent1</url-pattern>
+  </servlet-mapping>
+</web-app>

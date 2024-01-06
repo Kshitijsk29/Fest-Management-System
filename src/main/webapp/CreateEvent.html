@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="ISO-8859-1">
+    	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="CreateEvent.css">
+</head>
+<body>
+	<div class="hd">
+		<h2>FestoCon</h2>
+	</div>
+		<div class="fc-vdr">
+				<form id="myForm" action="AddEvent" method="post" >
+					<div class="fc">
+						<div class="f">
+							<div class="fs">Fest</div>
+							<div class="nn">
+								<div class="n n1">
+									<input type="text" name="EventName" id="characterInput" pattern="[A-Za-z]+" required>
+									<label for="characterInput">Name</label>
+								</div>
+								<div class="n n2">
+									<input id="numberInput" type="number" name="EventNo" pattern="[0-9]+" required>
+									<label for="numberInput">Event Number</label>
+								</div>
+							</div>
+						</div>
+						<div class="c">
+							<div class="fs">Coordinator</div>
+							<div class="nn">
+								<div class="n n1">
+									<input  type="text" name="coordinatorName" id="characterInput" pattern="[a-zA-Z]+" required>
+									<label for="characterInput">Name</label>
+								</div>
+								<div class="n n2">
+									<input  id="numberInput" type="number" name ="CoordinatorNo" pattern="[0-9]+" required >
+									<label>Contact</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="vdr">
+						<div class="n v">
+								<input type="text" name="venue">
+								<label>Venue</label>
+						</div>
+
+						<div class="drbs">
+							<div class="dr">
+								<div class="n d">
+									<input type="date" name="date" class="dt">
+									<label></label>
+								</div>
+								<div class="n rf">
+									<input type="number" name="fee">
+									<label>Registration Fee</label>
+								</div>
+							</div>
+							<div class="bs">
+								<button class="b"><a href="AdminEvent.html">Back</a></button>
+								<button class="s">Submit</button>							</div>
+						</div>						
+					</div>
+				</form>
+		</div>
+</body>
+<script>
+    document.getElementById("myForm").addEventListener("submit", 
+    function(event) {
+  var numberInput = document.getElementById("numberInput");
+  if (!numberInput.validity.valid) {
+    event.preventDefault();
+    alert("Please enter a valid number.");
+  }
+});    
+document.getElementById("myForm").addEventListener("submit", function(event) {
+  var characterInput = document.getElementById("characterInput");
+  
+  if (!characterInput.validity.valid) {
+    event.preventDefault();
+    alert("Please enter a valid character.");
+  }
+});
+</script>
+</html>

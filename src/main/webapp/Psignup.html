@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html><br>
+    <head>
+        	<link rel="stylesheet" href="Psignup.css">
+      		<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+        	<meta charset="UTF-8">
+        	<meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    </head>
+    <body>
+       	 <div class="bg"></div>
+        	<header>
+            	<h1>FestoMenia</h1>
+            		<div class="menu">
+                <div >
+                    <a href="index.html"><button class="bt">Home</button></a>
+                </div>               
+                <div ><a href="Plogin.html" class=""><button class="bt">SignUp</button></a></div>   
+            </div>                                  
+        </header> 
+        <div class="h-pg"></div>
+        <div class="li-f rn">
+            <span class="icon-close">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <h2>SignUp</h2>
+            <form method="post" action="StoreProcess">
+                <div class="pg-l">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" name="Pname" required>
+                    <label>Email</label>
+                </div>
+                <div class="pg-l">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" name="Pusername" required>
+                    <label>Username</label>
+                </div>
+                <div class="pg-l">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" name="Ppassword" required>
+                    <label>password</label>
+                </div>
+                <div class="pg-l">
+                  <span class="icon">
+                      <ion-icon name="lock-closed"></ion-icon>
+                  </span>
+                  <input type="password" name="Cpassword" required>
+                  <label> Conform Password</label>
+              </div>
+                <div class="cb">
+                    <label><input type="checkbox">I agree the terms & conditins</label>
+                </div>
+                <button type="submit" class="btn" >SignUp</button>
+                <div class="pg-s">
+                    <p>Already have an account?
+                    <a href="Plogin.html" class="ln-lk">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+</div>
+</body>
+</html>

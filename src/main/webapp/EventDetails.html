@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title> Event Details </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+			*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #2e2e44;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: 300;
+}
+h1{
+    border: 3px solid rgb(54, 60, 83);
+    border-radius: 5px;
+    padding: 20px;
+}
+.particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .card{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    width: 200px;
+  }
+  .card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+  @keyframes bgAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
+  
+  .particles-js {
+    background: linear-gradient(45deg, #ff6b6b, #ff8e53, #ffb30f, #32e0c4, #02b3e4);
+    background-size: 500% 500%;
+    animation: bgAnimation 10s ease infinite;
+  }
+  
+		</style>
+
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 style="text-align:center">FestoCon</h1>
+	<div class="particles-js">
+		<div class="container">
+			<div class="card">
+				<h3>1.  Create Event Details </h3>
+				<a href="CreateEvent.html" ><button type="button " id="button"> Create Event</button></a>
+			</div>
+			<div class="card">
+				<h3>2. View Event Details</h3>
+				<a href="ViewEvent1"><button type="button" id="button">View Event</button></a>
+			</div>
+		</div>
+	</div>	
+</body>
+</html>

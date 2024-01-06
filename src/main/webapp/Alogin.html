@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html><br>
+    <head>
+      <link rel="stylesheet" href="Alogin.css">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="bg"></div>
+        <header>
+            <h1>FestoMenia</h1>
+            <div class="menu">
+                <div >
+                    <a href="index.html"><button class="bt">Home</button></a>
+                </div>             
+                <div ><a href="#" class="s-lk"><button class="bt">SignUp</button></a></div>    
+            </div>         
+        </header> 
+    <div class="h-pg active">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="li-f login">
+            <h2>Admin</h2>
+            <form method="post" action="ValidateAd">
+                <div class="pg-l">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" name="Ausername" required>
+                    <label>Username</label>
+                </div>
+                <div class="pg-l" >
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" name="Apassword" required>
+                    <label>password</label>
+                </div>
+                <div class="cb">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn b1">Login</button>
+                <div class="pg-s">
+                    <p>Don't have an account?
+                    <a href="#" class="s-lk">SignUp</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="li-f rn">
+            <span class="icon-close">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <h2>SignUp</h2>
+            <form method="post" action="StoreProcess">
+                <div class="pg-l">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" name="" required>
+                    <label>Email</label>
+                </div>
+                <div class="pg-l">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" name="" required>
+                    <label>Username</label>
+                </div>
+                <div class="pg-l">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" name="" required>
+                    <label>password</label>
+                </div>
+                <div class="pg-l">
+                  <span class="icon">
+                      <ion-icon name="lock-closed"></ion-icon>
+                  </span>
+                  <input type="password" name="" required>
+                  <label> Conform Password</label>
+              </div>
+                <div class="cb">
+                    <label><input type="checkbox">I agree the terms & conditins</label>
+                </div>
+                <button type="submit" class="btn" >SignUp</button>
+                <div class="pg-s">
+                    <p>Already have an account?
+                    <a href="#" class="ln-lk">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container1">
+          <div class="row">
+            <div class="footer-col">
+              <h4>company</h4>
+              <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">privacy policy</a></li>
+                
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>get help</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Fest detail</a></li>
+              </ul>
+            </div>
+            <div class="footer-col n">
+              <h4></h4>
+              <ul>
+                <li><a href=""></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+       </footer>
+    <script src="Alogin.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+</div>
+
+</body>
+</html>

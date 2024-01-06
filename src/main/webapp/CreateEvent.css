@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background: #2e2e44;
+}
+.hd{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px ;
+    color: rgb(205, 222, 236);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid rgb(92, 99, 68);
+    z-index: 99;
+}
+.fc-vdr{
+    position: relative;
+    top: 25vh;
+    width: 100vh;
+    padding: 5px;
+    background: #9bd586;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 1px 15px #9bd586;
+}
+form{
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.fc{
+    position: relative;
+    width: 100%;
+    /*border: 3px solid red;*/
+    display: flex;
+}
+.f{
+    width: 50vh;
+    padding: 0 2vh;
+   /* border: 3px solid purple; */
+}
+.fs{
+    font-size: 2em;
+    font-weight: 500;
+   /* border: 3px solid greenyellow; */
+}
+.c{
+    width: 50vh;
+    padding: 0 2vh;
+   /* border: 3px solid purple; */
+}
+.n{
+    position: relative;
+    width: 100%;
+    height: 5vh;
+    border-bottom: 2px solid black;
+    margin: 30px 0 0 0;
+}
+.n label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+   /* border: 3px solid greenyellow; */
+}
+.n input:focus~label{
+    top: -5px;
+}
+
+
+.n input{
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    outline: none;  
+    padding: 2vh;  
+}
+.vdr{
+    padding: 0 2vh;
+   /* border: 3px solid red; */
+}
+.n.v input{
+    
+    padding: 2vh;
+     
+}
+.n.d input{
+    
+    padding: 2vh; 
+}
+.n.rf input{
+    
+    padding: 2vh; 
+}
+
+.dr{
+    width: 100%;
+    display: flex;
+}
+
+.d{
+    width: 30vh;
+    margin-right: 2vh;
+}
+.n.n1{
+    margin-top: 0;
+}
+.n.n2{
+    margin-top: 3vh;
+}
+button.s,.b {
+  margin: 0%;
+  margin-top: 20px;
+  margin-left: 0;
+  margin-bottom: 20px;
+  padding: 5px 35px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #162938;
+  font-size: 20px; 
+}
+button.b{
+    margin: 0%;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 6vh;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #162938;
+    font-size: 20px; 
+}
+a{
+    color: white;
+    text-decoration: none;
+}

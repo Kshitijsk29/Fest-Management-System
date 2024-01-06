@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<meta name="viewport" content="width=device=width, initial=scale=1.0">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+<body>
+	<div class="bg-img"></div>
+	<header>
+		<h1>FestoMenia</h1>
+		<div class="menu">
+			<div >
+				<a href="Parlogin.html"><button class="btn">Participate</button></a>
+			</div>
+			<div >
+				<a href="Alogin.html"><button class="btn">Admin</button></a>
+			</div>			
+		</div>		
+	</header> 
+    <div class="container">
+        <div class="slider">
+            <div class="slide slide1"></div>
+            <div class="slide slide2"></div>
+            <div class="slide slide3"></div>
+            <div class="slide slide4"></div>
+            <div class="slide slide5"></div>
+            <div class="slide slide6"></div>
+            <div class="slide slide7"></div>
+        </div>
+    </div>
+	<div class="particles-js">
+        
+    </div>
+	<footer class="footer">
+		<div class="container1">
+			<div class="row">
+				<div class="footer-col">
+					<h4>company</h4>
+					<ul>
+						<li><a href="#">about us</a></li>
+						<li><a href="#">our services</a></li>
+						<li><a href="#">privacy policy</a></li>
+						
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>get help</h4>
+					<ul>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Fest detail</a></li>
+					</ul>
+				</div>
+				<div class="footer-col ">
+					<h4>Admin</h4>
+					<ul>
+						<li><a href="Alogin.html">Login</a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>follow us</h4>
+					<div class="social-links">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-linkedin-in"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+   </footer>
+ 
+	<script>
+		function rotate() {
+		   var slider = document.querySelector('.slider');
+		   var slides = document.querySelectorAll('.slide');
+		   var lastSlide = slides[slides.length - 1];
+		   var firstSlide = slides[0].cloneNode(true);
+	   
+		   slider.removeChild(slides[0]);
+		   slider.appendChild(firstSlide);
+		   firstSlide.classList.add('firstSlide');
+	   
+		   var currentFirstSlide = document.querySelector('.firstSlide');
+		   currentFirstSlide.addEventListener('transitionend', function () {
+			   currentFirstSlide.classList.remove('firstSlide');
+		   });
+	   }
+	   
+	   window.setInterval(function () {
+		   rotate();
+	   }, 4000);
+	   
+		   </script>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Payment.css">
+    <title>Payment</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="payment-form">
+            <h2>Payment Details</h2>
+            <form id="payment-form" method="post" action="Register">
+                 <label for="name">Fest Name</label>
+            <input type="text" id="characterInput" name="ename" placeholder="Enter Fest Name" required>
+                <label for="no">Fest ID</label>
+            <input type="text" id="text" name="enum" placeholder="Enter Fest ID No.">            
+               <div class="form-group">
+                    <label for="card-number">Card Number</label>
+                    <input type="Number"  pattern="[0-9]+" id="numberInput" name="cardno" maxlength="16" placeholder="Enter your card number" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-holder">Card Holder</label>
+                    <input type="text" id="characterInput" name="cname" placeholder="Enter the card holder's name" required>
+                </div>
+                 <div class="form-group">
+                    <label for="card-number">Amount </label>
+                    <input type="Number"  pattern="[0-9]+" id="numberInput" name="" maxlength="16" placeholder="Enter your card number" required>
+                </div>
+                <div class="expiry-cvv">
+                    <div class="form-group">
+                        <label for="expiry-date">Expiry Date</label>
+                        <input type="date" id="expiry-date" name="edate" placeholder="MM/YY" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="password" id="numberInput"  pattern="[0-9]+" name="cvv"  minlength="3" maxlength="4" placeholder="Enter the CVV" required>
+                    </div>
+                </div>
+                <button type="submit" id="pay-now-btn">Pay Now</button>
+            </form>
+        </div>
+    </div>    
+   </body>
+   <script type="text/javascript">
+   document.getElementById("payment-form").addEventListener("submit", 
+		    function(event) {
+		  var numberInput = document.getElementById("numberInput");
+		  if (!numberInput.validity.valid) {
+		    event.preventDefault();
+		    alert("Please enter a valid number.");
+		  }
+		});    
+		document.getElementById("payment-form").addEventListener("submit", function(event) {
+		  var characterInput = document.getElementById("characterInput");
+		  
+		  if (!characterInput.validity.valid) {
+		    event.preventDefault();
+		    alert("Please enter a valid character.");
+		  }
+		});
+
+
+   </script>
+</html>
